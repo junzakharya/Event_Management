@@ -1,0 +1,29 @@
+Base URL: /api/v3/app/nudges
+
+1. Get a Nudge by ID
+* Request Type: GET
+* Endpoint: /{id}
+* Description: Retrieves a Nudge by its unique ID.
+
+2. Create a Nudge
+* Request Type: POST
+* Endpoint: /
+* Description: Creates a new Nudge.
+* Payload:
+   * title: Title of the Nudge (String)
+   * image: Image file for the Nudge cover (File upload)
+   * sendTime: Time at which the Nudge should be sent (String or DateTime)
+   * description: Description of the Nudge (String)
+   * icon: Icon for the Nudge (String)
+   * invitation: One-line invitation for the Nudge (String)
+
+3. Update a Nudge
+* Request Type: PUT
+* Endpoint: /{id}
+* Description: Updates an existing Nudge by its ID.
+* Payload: Same as the create endpoint (title, image, sendTime, description, icon, invitation)
+
+4. Delete a Nudge
+* Request Type: DELETE
+* Endpoint: /{id}
+* Description: Deletes a Nudge by its ID.
